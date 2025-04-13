@@ -1,108 +1,87 @@
-# Let's start
+# ParkinsonIA
 
-Watch the presentation video here :https://www.youtube.com/watch?v=K1oLz4x87Ug&feature=youtu.be
+ParkinsonIA is a Python-based application designed to assist in the detection of Parkinson's disease through voice analysis.
+By leveraging machine learning techniques, the application analyzes vocal patterns to identify potential indicators of the disease.
 
-Take a look at our Medium article : https://medium.com/@alan.marthineau/diagnosing-parkinsons-disease-by-voice-using-linear-regression-in-python-73aad2712fba?sk=cb817fbc1479dbfde6095c98accd9c20
+## 🎥 Demonstration
 
-GitHub of the Parkinson detect lib : https://github.com/alan91620/ParkinsonRecoLib
+Watch the presentation video to see ParkinsonIA in action:  
+[![Watch the video](https://img.youtube.com/vi/K1oLz4x87Ug/0.jpg)](https://www.youtube.com/watch?v=K1oLz4x87Ug)
 
-![](img/ExampleApp.PNG)
+**Application Demo**  
+![ExampleApp](https://github.com/user-attachments/assets/c4aa0e9e-0570-4759-bdff-767ee8869ffb)
 
-## Getting Started
-- Clone the repo and cd into the directory
-```sh
-git clone git@github.com:Milkad0/ParkinsonIA.git
-cd ParkinsonIA
-```
-- Install jolib, pandas, numpy, sklearn, and praat-parselmouth
-```sh
-pip install joblib
-pip install pandas
-pip install numpy
-pip install sklearn
-pip install praat-parselmouth
-```
 
-- Install pyaudio
+## 📖 Related Article
 
-Try to install with pip :
-```sh
-pip install pyaudio
-```
-If it does not work, install with one of the file in the "package" directory
+For an in-depth understanding of the methodology and implementation, refer to this article:  
+[Diagnosing Parkinson's Disease by Voice Using Linear Regression in Python](https://medium.com/@alan.marthineau/diagnosing-parkinsons-disease-by-voice-using-linear-regression-in-python-73aad2712fba)
 
-Python 3.8.* :
+## 🧠 Core Library
 
-32bits
-```sh
-pip install PyAudio-0.2.11-cp38-cp38-win32.whl
-```
-64bits
-```sh
-pip install PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+This project utilizes the [ParkinsonRecoLib](https://github.com/alan91620/ParkinsonRecoLib) for voice feature extraction and analysis.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.7 or 3.8
+
+### Installation
+
+```bash
+git clone https://github.com/ved181202/ParkinsonIA-master.git
+cd ParkinsonIA-master
+pip install joblib pandas numpy scikit-learn praat-parselmouth
 ```
 
-Python 3.7.* :
+#### PyAudio Installation
 
-32bits
-```sh
-pip install PyAudio-0.2.11-cp37-cp37m-win32.whl
-```
-64bits
-```sh
-pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl
-```
+- **Windows**: `pip install pyaudio` (or install from .whl if needed)
+- **macOS/Linux**: `pip install pyaudio` (ensure `portaudio` is installed)
 
-If you have the following error "filename.whl is not supported wheel on this platform", try to use 32bits file instead of 64bits file (and vice versa)
+## 🧪 Usage
 
-Package link : https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+### 1. Run the Application
 
-- Run the app
-```sh
+```bash
 python main.py
 ```
-## How it works?
 
-### Choose a file 
+### 2. Using the Application
 
-- Click on the "Choose File" button
+#### 🔊 Analyze an Existing Audio File
 
-![](img/ScreenAIStep1.png)
+- Click on **Choose File**  
+  ![ScreenAIStep1](https://github.com/user-attachments/assets/85cc120f-12aa-411c-a8c2-188c9eaea98e)
 
-- Select a .wav audio file
+- Select a `.wav` audio file  
+  ![parkinScreenWav](https://github.com/user-attachments/assets/de7c5956-096b-4282-98c2-63d9a92875c3)
 
-![](img/parkinScreenWav.PNG)
+- Click on **Detect** to process the file  
+  ![ScreenAIStep2](https://github.com/user-attachments/assets/1de73731-da1a-43fa-a45e-f8227fac2739)
 
-- Click on the "Detect" button
+- View the result  
+  ![ScreenAIStep3](https://github.com/user-attachments/assets/b5250695-eab8-4f32-9159-1f850b5e16ca)
 
-![](img/ScreenAIStep2.png)
+#### 🎙️ Record Your Voice
 
-- Watch the result !
+- Click on **Recording**  
+  ![ScreenAIRecordingStep1](https://github.com/user-attachments/assets/d098e625-99f3-4d1c-9586-8181c973decd)
 
-![](img/ScreenAIStep3.png)
+- Read the displayed text aloud  
+  ![ScreenAIRecordingStep2](https://github.com/user-attachments/assets/b97c65b7-ac53-4d09-84bf-71990c192bd2)
 
-### Record your voice
+- Click on **Stop Recording**, then **Detect**  
+  ![ScreenAIRecordingStep3](https://github.com/user-attachments/assets/2b96fa1e-4a0a-4593-aa5e-0050c9405933)
 
-- Click on the "Recording" button
+- View the analysis result  
+  ![ParkiStep](https://github.com/user-attachments/assets/94a399d3-8ee5-4fc5-afae-92fb3bedb67c)
 
-![](img/ScreenAIRecordingStep1.png)
+## 👥 Contributors
 
-- Turn on your microphone and read the displayed text
+- Ved Joshi ([ved181202](https://github.com/ved181202))
 
-![](img/ScreenAIRecordingStep2.png)
+## 📄 License
 
-- Click on the "Stop Recording" button
-
-![](img/ScreenAIRecordingStep3.png)
-
-- Click on the "Detect" button
-
-![](img/ScreenAIStep2.png)
-
-- Watch the result !
-
-![](img/ParkiStep.png)
-
-## Collaborators
-
-Alan MARTHINEAU - Vincent ETHEVE - Augustin LOLLIVIER
+This project is licensed under the MIT License.
