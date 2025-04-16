@@ -1,4 +1,4 @@
-# ParkinsonIA
+# Parkinsons Detection
 
 ParkinsonIA is a Python-based application designed to assist in the detection of Parkinson's disease through voice analysis.
 By leveraging machine learning techniques, the application analyzes vocal patterns to identify potential indicators of the disease.
